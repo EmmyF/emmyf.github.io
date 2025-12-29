@@ -12,6 +12,7 @@ h1 {
 	text-align: center;
 	padding-top: 40px;
 	font-weight: normal;
+	font-size: 13vw;
 }
 
 /*header*/
@@ -52,7 +53,7 @@ h1 {
 	padding-top: 40px;
 }
 .banner img {
-	width: 90%;
+	width: 100%;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -113,4 +114,3 @@ h1 {
 	padding-left: 7%;
 	padding-bottom: 5%;
 }
-
