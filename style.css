@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Carattere&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+body {
+	background-color: #080119;
+	margin: 0;
+	padding: 0;
+	font-family: "Playfair Display", serif;
+	color: #6c5e7d;
+}
+h1 {
+	font-family: "Carattere", cursive;
+	color: #6c5e7d;
+	text-align: center;
+	font-size-adjust: 1.5;
+	padding-top: 40px;
+	font-weight: normal;
+}
+
+/*header*/
+.header {
+	display: flex;
+	justify-content: space-between;
+	padding: 30px;
+}
+.header img {
+	height: 8vh;
+	width: auto;
+}
+.dropdown {
+	postiion: relative;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	text-alight: right;
+	right: 0;
+	background-color: rgba(0, 0, 0, .8);
+	padding: 20px;
+}
+.dropdown-content a {
+	text-decoration: none;
+	color: #6c5e7d;
+	font-size-adjust: 2;
+	display: block;
+	padding-bottom: 35px;
+	padding-right: 10px;
+}
+.dropdown-content a:hover {
+	color: #9a8bad;
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.banner {
+	padding-top: 40px;
+}
+.banner img {
+	width: 90%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid black;
+}
+/*nav buttons*/
+.nav a {
+	color: inherit;
+	font-size-adjust: 2.1;
+	text-align: center;
+	display: block;
+	text-decoration: underline;
+	text-decoration-thickness: 3px;
+}
+
+/*about me*/
+#about-me {
+	padding: 7%;
+	font-size-adjust: 1.5;
+}
+#about-me h3 {
+	padding-top: 5%;
+}
+#about-me a {
+	text-decoration: underline;
+	color: inherit;
+	text-decoration-thickness: 2px;
+}
+#about-me img {
+	width: 90%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 25px;
+	margin-top: 10%;
+	margin-bottom: 10%;
+	border: 1px solid black;
+}
+
+/*Contact me*/
+.contact img {
+	width: 10vw;
+}
+.iconSet {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 5%;
+}
+.contact a {
+	color: inherit;
+	font-size-adjust: 1.5;
+}
+.email {
+	text-align: center;
+	padding: 2%;
+}
+.email img {
+	padding-right: 5%;
+}
+.contact h3 {
+	font-size-adjust: 1.5;
+	padding-left: 7%;
+	padding-bottom: 5%;
+}
