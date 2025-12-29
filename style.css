@@ -5,12 +5,12 @@ body {
 	padding: 0;
 	font-family: "Playfair Display", serif;
 	color: #6c5e7d;
+	font-size-adjust: 1.3;
 }
 h1 {
 	font-family: "Carattere", cursive;
 	color: #6c5e7d;
 	text-align: center;
-	font-size-adjust: 1.5;
 	padding-top: 40px;
 	font-weight: normal;
 }
@@ -38,9 +38,7 @@ h1 {
 }
 .dropdown-content a {
 	text-decoration: none;
-	color: #6c5e7d;
-	font-size-adjust: 2;
-	display: block;
+	color: #6c5e7d;display: block;
 	padding-bottom: 35px;
 	padding-right: 10px;
 }
@@ -64,7 +62,6 @@ h1 {
 /*nav buttons*/
 .nav a {
 	color: inherit;
-	font-size-adjust: 2.1;
 	text-align: center;
 	display: block;
 	text-decoration: underline;
@@ -74,7 +71,6 @@ h1 {
 /*about me*/
 #about-me {
 	padding: 7%;
-	font-size-adjust: 1.5;
 }
 #about-me h3 {
 	padding-top: 5%;
@@ -106,7 +102,6 @@ h1 {
 }
 .contact a {
 	color: inherit;
-	font-size-adjust: 1.5;
 }
 .email {
 	text-align: center;
@@ -116,7 +111,6 @@ h1 {
 	padding-right: 5%;
 }
 .contact h3 {
-	font-size-adjust: 1.5;
 	padding-left: 7%;
 	padding-bottom: 5%;
 }
