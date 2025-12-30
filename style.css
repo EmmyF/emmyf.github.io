@@ -1,15 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Carattere&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/*variables*/
+:root {
+	--bg-color: #080119;
+	--text-color: #6c5e7d;
+	--highlight-color: #9a8bad;
+}
+
+/*mobile first design, initial style is for phone screens*/
 body {
-	background-color: #080119;
+	background-color: var(--bg-color);
 	margin: 0;
 	padding: 0;
 	font-family: "Playfair Display", serif;
-	color: #6c5e7d;
-	font-size-adjust: .8;
+	color: var(--text-color);
+	font-size-adjust: .6;
+	line-height: 2.5;
 }
 h1 {
 	font-family: "Carattere", cursive;
-	color: #6c5e7d;
+	color: var(--text-color);
 	text-align: center;
 	padding-top: 5%;
 	font-weight: normal;
@@ -21,6 +30,9 @@ h1 {
 	display: flex;
 	justify-content: space-between;
 	padding: 5%;
+	position: sticky;
+	top: 0;
+	background-color: var(--bg-color);
 }
 .header img {
 	height: 8vh;
@@ -39,13 +51,13 @@ h1 {
 }
 .dropdown-content a {
 	text-decoration: none;
-	color: #6c5e7d;
+	color: var(--text-color);
 	display: block;
 	padding-bottom: 5%;
 	padding-right: 2%;
 }
 .dropdown-content a:hover {
-	color: #9a8bad;
+	color: var(--highlight-color);
 }
 .dropdown:hover .dropdown-content {
 	display: block;
@@ -59,7 +71,6 @@ h1 {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	max-height: 60vh;
 }
 /*nav buttons*/
 .nav a {
@@ -72,10 +83,7 @@ h1 {
 
 /*about me*/
 #about-me {
-	padding: 7%;
-}
-#about-me h3 {
-	padding-top: 5%;
+	padding-top: 7%;
 }
 #about-me a {
 	text-decoration: underline;
@@ -115,4 +123,133 @@ h1 {
 .contact h3 {
 	padding-left: 7%;
 	padding-bottom: 5%;
+}
+
+/*Adjust for tablet*/
+@media only screen and (min-width: 600px) {
+	body {
+		font-size-adjust: .8;
+	}
+	.banner {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.header {
+		padding-bottom: 1%;
+		padding-top: 1%;
+	}
+	h1 {
+		padding-top: 1%;
+	}
+	.nav {
+		display: flex;
+		justify-content: space-evenly;
+		padding-top: 5%;
+	}
+	.nav a {
+		display: inline;
+		background-color: var(--text-color);
+		color: var(--bg-color);
+		padding: 2%;
+		border-radius: 15px;
+		text-decoration: none;
+	}
+	.nav a:hover {
+		background-color: var(--highlight-color);
+	}
+	h2 {
+		padding-bottom: 1%;
+		padding-top: 5%;
+		margin: 0;
+		text-align: center;
+	}
+	h3 {
+		padding-top: 0;
+		margin: 0;
+		text-align: center;
+	}
+	.contact img {
+		width: 8vw;
+	}
+	p {
+		text-indent: 6%;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	#about-me img {
+		max-height: 50vh;
+		width: auto;
+	}
+}
+
+/*Adjust for desktop*/
+@media only screen and (min-width: 992px) {
+	.banner img {
+		max-height: 80vh;
+		width: auto;
+	}
+	.banner {
+		background-color: rgba(0, 0, 0, .7);
+	}
+	.nav a {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	.nav {
+		padding: 0;
+	}
+	h1 {
+		padding-bottom: 5%;
+	}
+	.flex {
+		display: flex;
+		justify-content: space-evenly;
+		flex-direction: row-reverse;
+		align-items: center;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+	.flex p {
+		padding: 5%;
+	}
+	.upcoming {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		display: flex;
+		align-items: center;
+		padding-top: 0;
+		padding-bottom: 0;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.upcomingP {
+		padding: 5%;
+	}
+	.contact img {
+		width: 5vw;
+	}
+	.email {
+		padding-bottom: 3%;
+		margin: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.email a {
+		padding: 2%;
+	}
+	.email img {
+		padding: 0;
+	}
+	.iconSet {
+		padding-bottom: 3%;
+		padding-top: 0;
+		margin: 0;
+	}
 }
