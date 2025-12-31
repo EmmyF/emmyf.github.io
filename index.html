@@ -1,5 +1,4 @@
 <!-- TODO -->
-<!-- resume to home -->
 
 
 <!DOCTYPE html>
@@ -7,6 +6,7 @@
 <head>
 <link rel="stylesheet" href="style.css">
 <link rel="icon" href="images/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Emmy Frederickson</title>
 </head>
 <body>
@@ -25,10 +25,12 @@
 	</div>
 	
 	<!--banner-->
-	<div class="banner">
-		<img src="images/dm7.jpg" alt="People dressed as skeletons dancing under multicolored lights">
+	<div class="bannerBG">
 	</div>
-	<h1>Emmy Frederickson</h1>
+
+		<div class="banner">
+			<img src="images/dm7.jpg" alt="People dressed as skeletons dancing under multicolored lights">
+		</div>	<h1>Emmy Frederickson</h1>
 
 	<!--nav buttons-->
 	<div class="nav">
@@ -36,6 +38,16 @@
 		<a href="improv.html">Improviser</a>
 		<a href="playwright.html">Playwright</a>
 	</div>
+
+	<div class="navImg">
+		<a href="lighting.html"><img id="lightingButton" src="images/lightingButton.png" alt="Lighting Designer"></a>
+		<div class="flex">
+			<a href="improv.html"><img id="improvButton" src="images/improvButton.png" alt="Improviser"></a>
+			<a href="playwright.html"><img id="playwrightButton" src="images/playwrightButton.png" alt="Playwright"></a>
+		</div>
+	</div>
+
+	<img class="divider" src="images/divider.png" alt="line break">
 
 	<!--about me-->
 	<div id="about-me">
@@ -64,7 +76,7 @@
 	  type="application/pdf"
 	>
 	  <p>
-	    Your browser does not support PDFs.
+	    An error occured while fetching PDF. Try refreshing or using a different browser.
 	  </p>
 	</object>
 
