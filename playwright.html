@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="images/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emmy Frederickson</title>
+</head>
+<body class="playwright">
+	<!--header-->
+	<div class="header">
+		<a href="home.html"><img id="initials" src="images/initials.png" alt="EF"></a>
+		<div class="dropdown">
+			<img src="images/menuIcon.png" alt="menu">
+			<div class="dropdown-content">
+				<a href="lighting.html">Lighting Design</a>
+				<a href="improv.html">Improvisation</a>
+				<a href="playwright.html">Playwrighting</a>
+				<a href="#about-me">About Me</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="banner" id="playwright">
+		<h1>Playwrighting</h1>
+	</div>
+
+	<p>I've had the incredible opprotunity to see two plays I wrote be produced. <i>Space Play</i> was performed in a staged reading produced by Rollins Players in 2024, and <i>The Mirror's Other Side</i> was taken on by a wonderful group of students in Spirit Elementary's Drama Club in 2020.<br>
+	Currently, I'm co-writing <i>Four Dinners</i>, which is set to be part of the 2026 Orlando International Fringe Theatre Festival.<br>
+	"<i>Four Dinners</i> is a new play about sisters, Penny and Charlie, navigating their 20s as queer women from a sheltered background. Joined by roommate, Ynez, and girlfriend, Talia, the play takes place across four different dinners in Penny’s apartment. The play delves into desire, belonging, and girlhood. As a play about four queer women written by two queer women, it was accepted into the Orlando Fringe Festival under the Amplified Voices Lottery."
+	</p>
+
+	<h2>Space Play</h2>
+	<div>
+		<div class="slideshowContainer">
+			<a class="prev" onclick="minusSlide(0, 'pw')">&#10094;</a>
+			<img id="slideshow0" src="images/nps7.jpg">
+			<a class="next" onclick="plusSlide(0, 'pw')">&#10095;</a>
+		</div>
+		<br>
+
+		<div style="text-align:center">
+		  <span class="dot" onclick="chooseSlide(0, 'pw', 0)"></span>
+		  <span class="dot" onclick="chooseSlide(0, 'pw', 1)"></span>
+		  <span class="dot" onclick="chooseSlide(0, 'pw', 2)"></span>
+		  <span class="dot" onclick="chooseSlide(0, 'pw', 3)"></span>
+		</div>
+	</div>
+
+
+	<script src="js.js"></script>
+	<noscript>This browser does not support javascript</noscript>
+
+
+</body>
+</html>
