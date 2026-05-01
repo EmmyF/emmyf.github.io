@@ -7,10 +7,11 @@ everybody = ["images/dm12.jpg", "images/dm1.jpg", "images/dm14.jpg", "images/dm8
 npsNowheresville = ["images/nps1.jpg", "images/nps2.jpg", "images/nps3.jpg", "images/nps4.jpg", "images/nps5.jpg", "images/nps6.jpg"];
 rip = ["images/rip46.jpeg", "images/rip8.jpg", "images/rip39.jpeg", "images/rip14.jpg", "images/rip45.jpeg", "images/rip38.jpeg", "images/rip47.jpeg", "images/rip11.jpg", "images/rip51.jpg", "images/rip44.jpeg", "images/rip34.jpg", "images/rip30.jpg"];
 npsSpacePlay = ["images/nps7.jpg", "images/nps8.jpg", "images/nps9.jpg", "images/nps11.jpg"];
+anastasia = ["images/anastasia41.jpg", "images/anastasia1.jpg", "images/anastasia29.jpg", "images/anastasia25.jpg", "images/anastasia21.jpg", "images/anastasia11.jpg", "images/anastasia12.jpg", "images/anastasia62.jpg", "images/anastasia65.jpg", "images/anastasia61.jpg"];
 
 
 //init slideshow counters
-counters = [0, 0, 0, 0];
+counters = [0, 0, 0, 0, 0];
 
 //init slideshow names
 //note: slideshow id should be on the img tag
@@ -33,6 +34,9 @@ function chooseSlide(slideshowNum, imageSet, dotNumber) {
 function showSlide(slideshowNum, imageSetName) {
   //get image set
   switch(imageSetName) {
+  case "anastasia":
+    imageSet = anastasia;
+    break;
   case "trap":
     imageSet = trap;
     break;
